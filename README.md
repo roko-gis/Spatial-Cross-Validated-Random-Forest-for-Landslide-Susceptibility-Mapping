@@ -7,10 +7,48 @@ Spatial cross-validated Random Forest software for reproducible landslide suscep
 
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=roko-gis_Spatial-Cross-Validated-Random-Forest-for-Landslide-Susceptibility-Mapping&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=roko-gis_Spatial-Cross-Validated-Random-Forest-for-Landslide-Susceptibility-Mapping)
 
-## Citation
+## 📚 Citation
+
+If you use this software in your research, publications, or other scientific work, please cite the following version:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22685563.svg)](https://doi.org/10.5281/zenodo.22685563)
 
-### Cite as
+### If you use this software, please cite it as:
 
-Iliev, R. (2026). *Spatial Cross-Validated Random Forest for Landslide Susceptibility Mapping* (Version V1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22685563
+**APA 7th**
+
+> Iliev, R. (2026). *Spatial Cross-Validated Random Forest for Landslide Susceptibility Mapping* (Version V1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22685563
+
+**BibTeX**
+
+```bibtex
+@software{iliev2026_spatial_rf_landslide,
+  author    = {Iliev, R.},
+  title     = {Spatial Cross-Validated Random Forest for Landslide Susceptibility Mapping},
+  version   = {V1.0.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.22685563},
+  url       = {https://doi.org/10.5281/zenodo.22685563}
+}
+```
+
+**Chicago**
+
+> Iliev, R. 2026. *Spatial Cross-Validated Random Forest for Landslide Susceptibility Mapping*. Version V1.0.0. Zenodo. https://doi.org/10.5281/zenodo.22685563.
+
+**Harvard**
+
+> Iliev, R. (2026) *Spatial Cross-Validated Random Forest for Landslide Susceptibility Mapping*. Version V1.0.0. Zenodo. Available at: https://doi.org/10.5281/zenodo.22685563.
+
+**IEEE**
+
+> R. Iliev, *Spatial Cross-Validated Random Forest for Landslide Susceptibility Mapping*, V1.0.0, Zenodo, 2026. doi: 10.5281/zenodo.22685563.
+
+**MLA**
+
+> Iliev, R. *Spatial Cross-Validated Random Forest for Landslide Susceptibility Mapping*. Version V1.0.0, Zenodo, 2026. DOI: 10.5281/zenodo.22685563.
+
+---
+
+**Recommended citation:** Please cite the specific software version used in your work, using the DOI above to ensure that the referenced release remains permanently identifiable.
