@@ -1,0 +1,171 @@
+# Installation and Dependencies
+
+## Requirements
+
+The software requires a compatible **QGIS 3.x** installation with Python and the QGIS Processing framework.
+
+The validated development and test environment for version **1.0.0** is:
+
+* **QGIS 3.44.13**
+* Python environment provided by QGIS
+* QGIS Processing framework
+* PyQGIS
+* GDAL
+* PyQt5
+
+The scientific Python dependencies are:
+
+* **NumPy**
+* **SciPy**
+* **scikit-learn**
+* **joblib**
+
+Optional functionality:
+
+* **SHAP** — required only when SHAP-based feature interpretation is enabled.
+
+QGIS, PyQGIS, GDAL, PyQt5, and the QGIS Processing framework are provided as part of the QGIS installation and should normally be used from the Python environment associated with the installed QGIS version.
+
+Other QGIS 3.x versions may also be compatible, provided that the required Python, PyQGIS, GDAL, PyQt5, and Processing interfaces are available. However, **QGIS 3.44.13 should be considered the validated environment for version 1.0.0**.
+
+---
+
+## Installation
+
+### 1. Install QGIS
+
+Install a compatible **QGIS 3.x** release with Python and the Processing framework.
+
+**QGIS 3.44.13** is the validated development and test environment for version 1.0.0.
+
+QGIS can be obtained from the official QGIS website:
+
+https://qgis.org/
+
+### 2. Obtain the Repository
+
+Clone or download this repository.
+
+The main Processing algorithm is located at:
+
+```
+scripts/landslide_susceptibility.py
+```
+
+### 3. Add the Processing Algorithm
+
+Start QGIS and open the Processing Toolbox:
+
+**View → Panels → Processing Toolbox**
+
+Then:
+
+1. Open the **Scripts** menu in the Processing Toolbox.
+2. Select **Add Script to Toolbox**.
+3. Select:
+
+```
+scripts/landslide_susceptibility.py
+```
+
+The algorithm should then become available in the Processing Toolbox.
+
+---
+
+## Python Dependencies
+
+The software uses the following scientific Python packages:
+
+```
+numpy
+scipy
+scikit-learn
+joblib
+```
+
+These packages should be available in the Python environment associated with QGIS.
+
+Do not install or replace QGIS-bundled Python packages independently unless the resulting environment has been validated for compatibility with the installed QGIS version.
+
+### Optional Dependency
+
+SHAP functionality is optional:
+
+```
+shap
+```
+
+It is required only when SHAP-based feature interpretation is enabled.
+
+If SHAP is not installed, the core landslide susceptibility modelling functionality remains available, but SHAP-based analysis cannot be performed.
+
+---
+
+## QGIS-Provided Components
+
+The following components are supplied by the QGIS installation:
+
+```
+QGIS
+PyQGIS
+QGIS Processing
+GDAL
+PyQt5
+```
+
+These components should be used from the QGIS-managed environment rather than installed separately.
+
+---
+
+## Dependency Verification
+
+The installed environment can be checked from the **QGIS Python Console**.
+
+For example:
+
+```python
+import numpy
+import scipy
+import sklearn
+import joblib
+from osgeo import gdal
+from qgis.core import Qgis
+
+print("QGIS:", Qgis.version()
+print("NumPy:", numpy.__version__)
+print("SciPy:", scipy.__version__)
+print("scikit-learn:", sklearn.__version__)
+print("joblib:", joblib.__version__)
+print("GDAL:", gdal.VersionInfo("--version"))
+```
+
+If SHAP functionality is required, its availability can be checked with:
+
+```python
+import shap
+print("SHAP:", shap.__version__)
+```
+
+The exact software and package versions used for a scientific analysis should be recorded to support reproducibility.
+
+---
+
+## Validated Environment
+
+For version **1.0.0**, the validated development and test environment is:
+
+| Component    | Validated environment           |
+| ------------ | ------------------------------- |
+| QGIS         | 3.44.13                         |
+| Python       | QGIS-managed Python environment |
+| Processing   | QGIS Processing framework       |
+| PyQGIS       | Provided by QGIS                |
+| GDAL         | Provided by QGIS                |
+| PyQt5        | Provided by QGIS                |
+| NumPy        | QGIS-compatible version         |
+| SciPy        | QGIS-compatible version         |
+| scikit-learn | QGIS-compatible version         |
+| joblib       | QGIS-compatible version         |
+| SHAP         | Optional                        |
+
+```
